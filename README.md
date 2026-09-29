@@ -1,2 +1,4 @@
 # WEYA.exe66
-Some art made by me and you can booking there if interested 
+my first portfolio I made by myself
+some art by me, you can booking here if you interested 
+thankful 
