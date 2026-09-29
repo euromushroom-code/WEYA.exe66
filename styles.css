@@ -1,3 +1,8 @@
+---
+---
+
+@import "{{ site.theme }}";
+
 :root {
   --line-green: #06c755;
   --line-green-dark: #05a848;
