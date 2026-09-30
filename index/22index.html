@@ -3438,7 +3438,31 @@ window.addEventListener("load", () => {
 
     </button>
 
-    <audio id="bgMusic" loop>
+    <button id="musicButton">▶ Play</button>
+<p id="status" style="color:#ff2d55"></p>
+
+<audio id="bgMusic" loop src="assets/music/Soft_Kill_-_Ready_To_Die.mp3"></audio>
+
+<script>
+const a = document.getElementById("bgMusic");
+const b = document.getElementById("musicButton");
+const s = document.getElementById("status");
+
+a.addEventListener("error", () => {
+  s.textContent = "File error code " + a.error.code + " (4 = file not found or wrong format)";
+});
+
+b.addEventListener("click", async () => {
+  try {
+    if (a.paused) { await a.play(); b.textContent = "⏸ Pause"; }
+    else { a.pause(); b.textContent = "▶ Play"; }
+  } catch (e) {
+    s.textContent = "Error: " + e.message;
+  }
+});
+</script>
+
+   <audio id="bgMusic" loop>
         <source src="assets/music/Soft Kill - Ready To Die.mp3" type="audio/mpeg">
     </audio>
 
