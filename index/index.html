@@ -1821,6 +1821,10 @@ footer {
     background: #55555a;
 }
 
+	.line-btn{display:inline-flex;align-items:center;gap:10px;margin:35px 0 0 24px;padding:10px 20px;border:1px solid #06c755;color:#06c755;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;transition:background .3s,color .3s}
+.line-btn:hover{background:#06c755;color:#fff}
+@media(max-width:800px){.line-btn{margin-left:0;display:flex;width:fit-content}}
+
 </style>
 </head>
 
@@ -2903,6 +2907,9 @@ footer {
 
         ponyomest@gmail.com
 
+		<a href="https://line.me/ti/p/~weya.exe" target="_blank" rel="noopener noreferrer" class="line-btn reveal">Contact me on LINE ↗</a>
+
+
     </a>
 
     <form class="booking-form reveal" id="bookingForm">
@@ -2912,7 +2919,7 @@ footer {
         </div>
         <div class="field">
             <label for="bookingEmail">Your email</label>
-            <input id="bookingEmail" name="email" type="email" placeholder="you@example.com" required>
+            <input id="bookingEmail" name="email" type="email" placeholder="ponyomest@gmail.com" required>
         </div>
         <div class="field">
             <label for="bookingType">Booking for</label>
